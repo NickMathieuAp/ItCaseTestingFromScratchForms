@@ -144,7 +144,7 @@ a{
   position: fixed;
   bottom: -17rem;
   right: -17rem;
-  z-index: -1;
+  z-index: -3;
 }
 
 .mat-body p, .mat-body-1 p, .mat-typography p {

@@ -12,7 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SelectMultipleOptionsConfigurationBuilder } from './configurationBuilder/configurationBuilder.component';
+import { SelectMultipleExample } from './select-multiple-example';
 
 import {MaterialExampleModule} from '../material.module'
 import {MatNativeDateModule} from '@angular/material/core';
@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     AppComponent,
     DatabaseSelectionComponent,
     SidenavComponent,
+    SelectMultipleExample
     
   ],
   imports: [
@@ -44,8 +45,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     HttpClientModule,
     MatFormFieldModule,
   ],
+
+  exports: [
+    MatFormFieldModule,
+  ],
+
   providers: [],
-  bootstrap: [AppComponent, SelectMultipleOptionsConfigurationBuilder],
+  bootstrap: [AppComponent, /*SelectMultipleExample*/],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA

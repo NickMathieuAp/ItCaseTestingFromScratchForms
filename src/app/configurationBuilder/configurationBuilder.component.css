@@ -3,7 +3,10 @@ h1{
 	font-family: AndesBold;
 	font-size: 1.3rem;
 }
-
+h1:nth-child(1){
+	margin-left:0px;
+	margin-top: 27px;
+}
 h1:nth-child(3){
 	margin-top: 40px;
 }
@@ -29,12 +32,32 @@ a{
 	border-width: 0px 0px 2px 0px;
 	border-style: solid;
 }
+.linkstyle{
+	border-style: none;
+}
+p>a:hover{
+	border-color: #001a70bb;
+	transition: 1s;
+
+}
+#configName{
+	width: 500px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family:AndesBook;
+	text-indent: 20px;
+	font-size: 1rem;
+	border-color: #A1D9DC;
+	border-style: solid;
+}
 
 form{
 	margin-left: 51px;
 	margin-right: 50px;
 	display: flex;
 	margin-top: -2px;
+	z-index: 3;
 }
 
 #function{
@@ -101,14 +124,29 @@ select:not([multiple]) {
 }
 
 .button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 15px 32px;
+	background-color: white;
+	border: solid;
+	color: #001A70;
+	padding: 5px 16px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
 	cursor: pointer;
+	font-size: 20px;
+	margin-left: 626px;
+	margin-top: 10px;
+	font-family: AndesBold;
   }
+
+
+.button:hover {
+	background-color: #FFDD55;
+	border:solid;
+	border-color:#FFDD55;
+	transition-duration: 0.5s;
+	padding: 5px 16px;
+
+}
+img{
+	z-index: 3;
+}
